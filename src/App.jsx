@@ -1,9 +1,14 @@
+import { useState } from "react";
 import Header from "./components/Header";
 
 function App() {
+  const [openBoardModal, setOpenBoardModal] = useState(false);
   return (
     <>
-      <Header />
+      <Header
+        openBoardModal={openBoardModal}
+        setOpenBoardModal={setOpenBoardModal}
+      />
     </>
   );
 }
